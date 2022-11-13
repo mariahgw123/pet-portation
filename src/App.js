@@ -1,6 +1,11 @@
-import logo_paw from "./images/logo_paw.png";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./components/home";
+import NavBar from "./components/navBar";
+import OurServices from "./components/ourServices";
+import Media from "./components/media";
+import ContactUs from "./components/contactUs";
+import SignIn from "./components/signIn";
 
 //tab in browser title
 document.title = "Pet-Portation";
@@ -9,19 +14,19 @@ document.logo = null;
 
 function App() {
   return (
-    <div className='App'>
-      <Home />
-      <header className='App-header'>
-        <img src={logo_paw} className='App-logo' alt='logo' />
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'>
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className='container-fluid' id='root'>
+      <NavBar />
+      <div>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='home' element={<Home />} />
+          <Route path='ourServices' element={<OurServices />} />
+          <Route path='media' element={<Media />} />
+          <Route path='contactUs' element={<ContactUs />} />
+          <Route path='signIn' element={<SignIn />} />
+        </Routes>
+      </div>
+    </main> //#root
   );
 }
 
