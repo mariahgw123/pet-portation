@@ -1,10 +1,6 @@
 import React from 'react';
 
-//stateless component that renders
-//static "about" page data (pics, text, etc)
-//we have fun here.
-
-const Home = () => {
+const OurServices = () => {
     return (
         <div style={{
             display: 'flex',
@@ -12,9 +8,9 @@ const Home = () => {
             alignItems: 'center',
             height: '90vh'
             }}>
-            <h1>Home</h1>
+            <h1>Our Services *listed*</h1>
         </div>
     )
 }
 
-export default Home;
+export default OurServices;
