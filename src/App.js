@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo_paw from "./images/logo_paw.png";
 import "./App.css";
 import Home from "./components/home";
 
@@ -12,7 +12,7 @@ function App() {
     <div className='App'>
       <Home />
       <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
+        <img src={logo_paw} className='App-logo' alt='logo' />
         <a
           className='App-link'
           href='https://reactjs.org'
