@@ -44,7 +44,11 @@ const NavBar = ({toggle}) => {
                 <NavLink to="media" activeStyle>
                     Puppy Pics
                 </NavLink>
+<<<<<<< HEAD
                 <NavLink to="contactUs" activeStyle>
+=======
+                <NavLink to="/contactUs" activeStyle>
+>>>>>>> 97a867e (changed font sizes and colors and removed exclamation point)
                     Contact Us
                 </NavLink>
             </NavMenu>
@@ -52,6 +56,7 @@ const NavBar = ({toggle}) => {
                 <NavBtnLink 
                 to="/signin">
                     Sign In
+                    
                 </NavBtnLink>
             </NavBtn>
           </NavbarContainer>   
