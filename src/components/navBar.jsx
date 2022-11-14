@@ -39,12 +39,13 @@ const NavBar = () => {
                     Puppy Pics
                 </NavLink>
                 <NavLink to="/contactUs" activeStyle>
-                    Contact Us!
+                    Contact Us
                 </NavLink>
             </NavMenu>
             <NavBtn>
                 <NavBtnLink to="/signin">
                     Sign In
+                    
                 </NavBtnLink>
             </NavBtn>
                     
