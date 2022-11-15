@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
 
 export const Nav = styled.nav`
-  background: papayawhip;
+  background: #1d0c1f;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -11,16 +11,20 @@ export const Nav = styled.nav`
   z-index: 10;
 `;
 export const NavLink = styled(Link)`
-  color: palevioletred;
+  color: white;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
 
   &.active {
-    color: #a6145d;
+    font-size: 20px;
+    color: #cbd6cb;
+    font-weight: 700;
   }
 `;
 
@@ -59,10 +63,10 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(Link)`
-  border-radius: 4px;
+  border-radius: 6px;
   background: #256cel;
   padding: 10px 22px;
-  color: #grey;
+  color: white;
   border: none;
   outline: none;
   cursor: pointer;
@@ -71,7 +75,7 @@ export const NavBtnLink = styled(Link)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
+    background: #a896a6;
     color: #010606;
   }
 `;
