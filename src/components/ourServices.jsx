@@ -11,13 +11,20 @@ import {
     Subtitle,
     BtnWrap,
     ImgWrap,
+<<<<<<< HEAD
     Img,
     } from './ourServicesElements';
 import { Button } from './buttonElements'; 
+=======
+    Img
+    } from './ourServicesElements';
+import { Button } from 'react-scroll'; 
+>>>>>>> e785959 (the html structure for the react scroll services page)
 
 const OurServices = ({lightBg, id, imgStart, topLine, lightText, headline, darkText,
 description, buttonLabel, img, alt, primary, dark, dark2}) => {
     return (
+<<<<<<< HEAD
         
      <>
        <InfoContainer lightBg = {lightBg} id={id}>
@@ -40,12 +47,30 @@ description, buttonLabel, img, alt, primary, dark, dark2}) => {
                             dark = {dark ? 1 : 0}
                             dark2 = {dark2 ? 1 : 0}
                              >{buttonLabel}</Button>
+=======
+     <>
+       <InfoContainer>
+        <InfoWrapper>
+            <InfoRow>
+                <Column1>
+                    <TextWrapper>
+                        <TopLine>TopLine</TopLine>
+                        <Heading>Heading</Heading>
+                        <Subtitle>Subtitle</Subtitle>
+                        <BtnWrap>
+                            <Button
+                            to="home" />
+>>>>>>> e785959 (the html structure for the react scroll services page)
                         </BtnWrap>
                     </TextWrapper>
                 </Column1>
                 <Column2>
                     <ImgWrap>
+<<<<<<< HEAD
                     <Img src={img} alt = {alt}/>
+=======
+                    <Img/>
+>>>>>>> e785959 (the html structure for the react scroll services page)
                     </ImgWrap>
                 </Column2>
             </InfoRow>
