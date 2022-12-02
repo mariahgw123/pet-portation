@@ -1,15 +1,46 @@
 import React from 'react';
+import {
+    InfoContainer,
+    InfoWrapper,
+    InfoRow,
+    Column1,
+    Column2,
+    TextWrapper,
+    TopLine,
+    Heading,
+    Subtitle,
+    BtnWrap,
+    ImgWrap,
+    Img
+    } from './ourServicesElements';
+import { Button } from 'react-scroll'; 
 
 const OurServices = () => {
     return (
-        <div style={{
-            display: 'flex',
-            justifyContent:'center',
-            alignItems: 'center',
-            height: '90vh'
-            }}>
-            <h1>Our Services *listed*</h1>
-        </div>
+     <>
+       <InfoContainer>
+        <InfoWrapper>
+            <InfoRow>
+                <Column1>
+                    <TextWrapper>
+                        <TopLine>TopLine</TopLine>
+                        <Heading>Heading</Heading>
+                        <Subtitle>Subtitle</Subtitle>
+                        <BtnWrap>
+                            <Button
+                            to="home" />
+                        </BtnWrap>
+                    </TextWrapper>
+                </Column1>
+                <Column2>
+                    <ImgWrap>
+                    <Img/>
+                    </ImgWrap>
+                </Column2>
+            </InfoRow>
+        </InfoWrapper>
+       </InfoContainer>
+     </>
     )
 }
 
