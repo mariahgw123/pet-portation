@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Button } from './buttonElement';
+import { Button } from './buttonElements';
 import { 
     Wrapper,
     HomeBg,
@@ -12,6 +12,13 @@ import {
     ArrowRight
  } from './homeElements';
  import Video from '../videos/dog_peek_vid.mp4';
+ import OurServices from './ourServices';
+ import Packages from './packages';
+ import {
+    homeObjOne,
+    homeObjTwo,
+    homeObjThree
+    } from './data';
 
 const Home = () => {
     const [hover, setHover] = useState(false)
@@ -36,7 +43,7 @@ const Home = () => {
             </HomeP>
             <HomeBtnWrapper>
                 <Button
-                to = 'signup'
+                to = 'ourServices'
                 onMouseEnter={onHover}
                 onMouseLeave={onHover}>
                     Get Started {hover ? <ArrowForward /> : <ArrowRight />}
@@ -44,6 +51,10 @@ const Home = () => {
             </HomeBtnWrapper>
         </HomeContent>
        </Wrapper>
+       <OurServices {...homeObjOne} />
+       <OurServices {...homeObjTwo} />
+       <Packages />
+       <OurServices {...homeObjThree} />
        </>
     )
 }
