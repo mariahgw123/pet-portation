@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import Pages from "./pages/pages";
 import Home from "./components/home";
-import NavBar from "./components/navBar";
 import OurServices from "./components/ourServices";
 import Media from "./components/media";
 import ContactUs from "./components/contactUs";
@@ -15,7 +15,7 @@ document.logo = null;
 function App() {
   return (
     <main className='container-fluid' id='root'>
-      <NavBar />
+      <Pages />
       <div>
         <Routes>
           <Route path='/' element={<Home />} />
