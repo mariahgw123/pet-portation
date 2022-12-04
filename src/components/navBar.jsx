@@ -2,18 +2,22 @@ import React from 'react';
 import logo_paw from '../images/logo_paw.png';
 import {
     Nav,
+    NavbarContainer,
     NavLink,
+    NavLogo,
+    MobileIcon,
     Bars,
     NavMenu,
     NavBtn,
     NavBtnLink
 } from './navBarElements';
 
-const NavBar = () => {
+const NavBar = ({toggle}) => {
     return (
         <>
         <Nav>
-            <NavLink
+        <NavbarContainer>
+        <NavLogo
             to="/">
             <img
             style={{
@@ -26,29 +30,31 @@ const NavBar = () => {
             src={logo_paw}
             alt="logo_paw">
             </img>
-            </NavLink>
+            </NavLogo>
+            <MobileIcon onClick={toggle}>
             <Bars />
+            </MobileIcon>
             <NavMenu>
-                <NavLink to="/home" activeStyle>
+                <NavLink to="home" activeStyle>
                     Home
                 </NavLink>
-                <NavLink to="/ourServices" activeStyle>
+                <NavLink to="ourServices" activeStyle>
                     Our Services
                 </NavLink>
-                <NavLink to="/media" activeStyle>
+                <NavLink to="media" activeStyle>
                     Puppy Pics
                 </NavLink>
-                <NavLink to="/contactUs" activeStyle>
+                <NavLink to="contactUs" activeStyle>
                     Contact Us
                 </NavLink>
             </NavMenu>
             <NavBtn>
-                <NavBtnLink to="/signin">
+                <NavBtnLink 
+                to="/signin">
                     Sign In
-                    
                 </NavBtnLink>
             </NavBtn>
-                    
+          </NavbarContainer>   
         </Nav>
         </>
     )
