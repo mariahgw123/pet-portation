@@ -45,10 +45,14 @@ const NavBar = ({toggle}) => {
                     Puppy Pics
                 </NavLink>
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <NavLink to="contactUs" activeStyle>
 =======
                 <NavLink to="/contactUs" activeStyle>
 >>>>>>> 97a867e (changed font sizes and colors and removed exclamation point)
+=======
+                <NavLink to="contactUs" activeStyle>
+>>>>>>> 840305e (removed / from links because they are to be react scroll links. still need to get that working. added some styling elements as well as an active mobile hamburger icon)
                     Contact Us
                 </NavLink>
             </NavMenu>
@@ -56,7 +60,6 @@ const NavBar = ({toggle}) => {
                 <NavBtnLink 
                 to="/signin">
                     Sign In
-                    
                 </NavBtnLink>
             </NavBtn>
           </NavbarContainer>   
