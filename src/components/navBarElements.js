@@ -18,10 +18,6 @@ export const Nav = styled.nav`
     transition: 0.8s all ease;
   }
 `;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 5dec9b7 (added more styling to navBar)
 
 export const NavbarContainer = styled.div`
   display: flex;
@@ -34,37 +30,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(Link)`
-<<<<<<< HEAD
   color: white;
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
-  height: 100%;
-  cursor: pointer;
-`;
-
-export const MobileIcon = styled.div`
-  display: none;
-
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
-`;
-
-export const NavLink = styled(LinkS)`
-  color: #fff;
-=======
-export const NavLink = styled(Link)`
-=======
->>>>>>> 5dec9b7 (added more styling to navBar)
-  color: white;
->>>>>>> 263e32a (style elements changed)
   display: flex;
   align-items: center;
   padding: 0 1rem;
@@ -98,14 +64,7 @@ export const NavLink = styled(LinkS)`
   font-weight: 700;
 
   &.active {
-<<<<<<< HEAD
-<<<<<<< HEAD
     border-bottom: 3px solid #cbd6cb;
-=======
->>>>>>> 263e32a (style elements changed)
-=======
-    border-bottom: 3px solid #cbd6cb;
->>>>>>> 5dec9b7 (added more styling to navBar)
     font-size: 20px;
     color: #cbd6cb;
     font-weight: 700;
@@ -149,19 +108,9 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(Link)`
-<<<<<<< HEAD
-<<<<<<< HEAD
   border-radius: 50px;
   font-size: 20px;
   font-weight: 700;
-=======
-  border-radius: 6px;
->>>>>>> 263e32a (style elements changed)
-=======
-  border-radius: 50px;
-  font-size: 20px;
-  font-weight: 700;
->>>>>>> 5dec9b7 (added more styling to navBar)
   background: #256cel;
   padding: 10px 22px;
   color: white;
@@ -173,15 +122,7 @@ export const NavBtnLink = styled(Link)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-<<<<<<< HEAD
-<<<<<<< HEAD
     background: #cbd6cb;
-=======
-    background: #a896a6;
->>>>>>> 263e32a (style elements changed)
-=======
-    background: #cbd6cb;
->>>>>>> 5dec9b7 (added more styling to navBar)
     color: #010606;
   }
 `;

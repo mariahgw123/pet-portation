@@ -44,7 +44,7 @@ export const VideoBg = styled.video`
   height: 100%;
   -0-object-fit: cover;
   object-fit: cover;
-  background: #326c2b;
+  background: #1d0c1f;
 `;
 
 export const HomeContent = styled.div`

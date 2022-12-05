@@ -31,7 +31,7 @@ export const homeObjTwo = {
   buttonLabel: "Discover",
   imgStart: true,
   img: require("../images/undraw_Dog.png"),
-  alt: "weddingpic",
+  alt: "undraw_dog",
   dark: false,
   primary: false,
   darkText: true,

@@ -9,7 +9,6 @@ import {
     TitleWrapper,
     GalleryWrapper
     } from './mediaElements';
-import bed_no_dog from '../images/bed_no_dog.png';
 import bed_with_willow from '../images/bed_with_willow.png';
 
 const Media = () => {
@@ -21,7 +20,7 @@ const Media = () => {
                 <Title>Satisfied Pupstomers!</Title>
                 <VideoBg
                 autoPlay loop muted src = {Video}
-                type = 'video/map4' />
+                type = 'video/mp4' />
                 </TitleWrapper>
             </WrapperBg>
             <GalleryWrapper>

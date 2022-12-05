@@ -4,10 +4,10 @@ import {
     Wrapper,
     HomeBg,
     VideoBg,
+    HomeContent,
     HomeH1,
     HomeP,
     HomeBtnWrapper,
-    HomeContent,
     ArrowForward,
     ArrowRight
  } from './homeElements';

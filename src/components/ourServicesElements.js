@@ -2,15 +2,7 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #fff;
-<<<<<<< HEAD
-<<<<<<< HEAD
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#1d0c1f")};
-=======
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "010606")};
->>>>>>> ac88a7c (styling for the services page)
-=======
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#1d0c1f")};
->>>>>>> 00805cd (ourServices colors adjusted)
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -60,15 +52,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-<<<<<<< HEAD
-<<<<<<< HEAD
-  color: #9cf0c4;
-=======
   color: #01bf71;
->>>>>>> ac88a7c (styling for the services page)
-=======
-  color: #9cf0c4;
->>>>>>> 00805cd (ourServices colors adjusted)
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -82,26 +66,12 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-<<<<<<< HEAD
-<<<<<<< HEAD
   color: ${({ lightText }) =>
     lightText ? "#f7f8fa" : "#010606"}; /*@media screen
-    and (max-width: 480px) {
-    font-size: 32px;
-  } */
-=======
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "010606")} @media screen
     and (max-width: 480px) {
     font-size: 32px;
   }
->>>>>>> ac88a7c (styling for the services page)
-=======
-  color: ${({ lightText }) =>
-    lightText ? "#f7f8fa" : "#010606"}; /*@media screen
-    and (max-width: 480px) {
-    font-size: 32px;
-  } */
->>>>>>> 00805cd (ourServices colors adjusted)
+  */
 `;
 
 export const Subtitle = styled.p`

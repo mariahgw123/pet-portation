@@ -3,9 +3,9 @@ import logo_paw from '../images/logo_paw.png';
 import {
     Nav,
     NavbarContainer,
-    NavLink,
     NavLogo,
     MobileIcon,
+    NavLink,
     Bars,
     NavMenu,
     NavBtn,
@@ -35,26 +35,18 @@ const NavBar = ({toggle}) => {
             <Bars />
             </MobileIcon>
             <NavMenu>
-                <NavLink to="home" activeStyle>
+                <NavLink to="home">
                     Home
                 </NavLink>
-                <NavLink to="ourServices" activeStyle>
+                <NavLink to="ourServices">
                     Our Services
                 </NavLink>
-                <NavLink to="media" activeStyle>
-                    Puppy Pics
+                <NavLink to="media">
+                    Satisfied Pupstomers
                 </NavLink>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <NavLink to="contactUs" activeStyle>
-=======
-                <NavLink to="/contactUs" activeStyle>
->>>>>>> 97a867e (changed font sizes and colors and removed exclamation point)
-=======
-                <NavLink to="contactUs" activeStyle>
->>>>>>> 840305e (removed / from links because they are to be react scroll links. still need to get that working. added some styling elements as well as an active mobile hamburger icon)
+                <NavLink to="contactUs">
                     Contact Us
-                </NavLink>
+                    </NavLink>
             </NavMenu>
             <NavBtn>
                 <NavBtnLink 
