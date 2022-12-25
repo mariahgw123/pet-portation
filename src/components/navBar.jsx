@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import logo_paw from '../images/logo_paw.png';
+import {IconContext} from 'react-icons/lib';
 import {
     Nav,
+    NavLink,
     NavbarContainer,
     NavLogo,
     MobileIcon,
-    NavLink,
+    ScrollLink,
     Bars,
     NavMenu,
     NavBtn,
@@ -13,9 +15,24 @@ import {
 } from './navBarElements';
 
 const NavBar = ({toggle}) => {
+    const [scrollNav, setScrollNav] = useState(false)
+
+    const changeNav = () => {
+        if(window.scrollY >= 100) {
+            setScrollNav(true)
+        } else {
+            setScrollNav(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav)
+    }, [])
+
     return (
         <>
-        <Nav>
+        <IconContext.Provider value = {{color: '#fff'}}>
+        <Nav scrollNav={scrollNav}>
         <NavbarContainer>
         <NavLogo
             to="/">
@@ -35,18 +52,19 @@ const NavBar = ({toggle}) => {
             <Bars />
             </MobileIcon>
             <NavMenu>
-                <NavLink to="home">
+                <NavLink to="/">
                     Home
                 </NavLink>
-                <NavLink to="ourServices">
+                <ScrollLink to="About"> About </ScrollLink>
+                <ScrollLink  to="ourServices">
                     Our Services
-                </NavLink>
-                <NavLink to="media">
+                </ScrollLink>
+                <ScrollLink to="media">
                     Satisfied Pupstomers
-                </NavLink>
-                <NavLink to="contactUs">
+                </ScrollLink>
+                <ScrollLink to="contactUs">
                     Contact Us
-                    </NavLink>
+                    </ScrollLink>
             </NavMenu>
             <NavBtn>
                 <NavBtnLink 
@@ -56,6 +74,7 @@ const NavBar = ({toggle}) => {
             </NavBtn>
           </NavbarContainer>   
         </Nav>
+        </IconContext.Provider>
         </>
     )
 }
