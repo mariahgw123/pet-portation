@@ -1,12 +1,13 @@
 import { NavLink as Link } from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
+// import { Link as LinkS } from "react-scroll";
 import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
 
 export const Nav = styled.nav`
-  background: #1d0c1f;
+  background: ${({ scrollNav }) => (scrollNav ? "#1d0c1f" : "transparent")};
   height: 80px;
   display: flex;
+  margin-top: -80px;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
@@ -16,6 +17,20 @@ export const Nav = styled.nav`
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
+  }
+`;
+
+export const NavLink = styled(Link)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  curosr: pointer;
+
+  &.active {
+    color: #a6145d;
   }
 `;
 
@@ -52,7 +67,7 @@ export const MobileIcon = styled.div`
   }
 `;
 
-export const NavLink = styled(LinkS)`
+export const ScrollLink = styled(Link)`
   color: #fff;
   display: flex;
   align-items: center;
